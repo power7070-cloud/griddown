@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Outage Power Calculator – How long will my power station or battery run my house? | GridDown</title>
+<meta name="description" content="Free backup power calculator for hurricane and grid outages. Pick appliances, enter your EcoFlow, Powerwall, or generator capacity, and see runtime and solar recharge time. Built for Houston & Gulf Coast.">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><h1>⚡ GridDown Outage Power Calculator</h1><p>How long will your power station, home battery, or generator keep the lights on after a hurricane or a Beryl-style outage?</p></header>
+<main>
+<section class="card"><h2>1. Pick what you need to run</h2><div id="apps"></div>
+<button id="add">+ Add custom load</button></section>
+<section class="card"><h2>2. Your backup power</h2>
+<label>Preset <select id="preset"></select></label>
+<label>Battery capacity (Wh) <input id="wh" type="number" value="3600"></label>
+<label>Max continuous output (W) <input id="out" type="number" value="3600"></label>
+<label>Solar panels (W rated) <input id="solar" type="number" value="400"></label>
+<label>Peak sun hours/day <input id="psh" type="number" step="0.1" value="5"> <small>Houston avg ≈ 4.5–5.5</small></label></section>
+<section class="card result" id="result"></section>
+<section class="card"><h2>Recommended gear</h2><p class="muted">Affiliate links go here (EcoFlow, Anker SOLIX, Bluetti, Amazon). Placeholder – no live links yet.</p></section>
+<section class="card"><h2>Guides</h2><ul><li><a href="guides/fridge-runtime.html">How long will a power station run a refrigerator?</a></li><li><a href="guides/houston-hurricane-power-checklist.html">Houston hurricane backup power checklist</a></li></ul></section>
+</main><footer>Estimates only. Assumes 85% inverter efficiency. Never run generators indoors. © GridDown</footer>
+<script src="app.js"></script></body></html>
